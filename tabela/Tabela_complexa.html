@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela complexa</title>
+</head>
+
+<body>
+    <table>
+
+        <caption>Produzidos x vendidos por loja</caption>
+
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: aquamarine;">
+            <col span="2" style="background-color: salmon;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Campeão da Construção</th>
+                <th colspan="2" scope="colgroup">Castelo Forte</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">vendidos</th>
+                <th scope="col">vendidos</th>
+                <th scope="col">Produzidos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <th scope="row">Tijolo</th>
+                <td>100</td>
+                <td>50</td>
+                <td>30</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Tinta</th>
+                <td>50</td>
+                <td>25</td>
+                <td>60</td>
+                <td>60</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
