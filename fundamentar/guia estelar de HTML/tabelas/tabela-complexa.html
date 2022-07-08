@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela complexa</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <table>
+        <caption>Produzidos x vendidos</caption>
+
+        <colgroup>
+            <col>
+            <col span="2" style="background-color:rgba(0, 0, 255, 0.329);">
+            <col span="2" style="background-color: rgba(255, 0, 0, 0.479);">
+        </colgroup>
+
+        <thead>
+
+            <tr>
+                <th rowspan="2" scope="colgroup"></th> <!-- o scope vai ser necessario para acessibilidade-->
+                <th colspan="2" scope="colgroup">Superbom</th> <!-- colgroup = agrupador de colunas-->
+                <th colspan="2" scope="colgroup">caique</th>
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th> <!-- colunas-->
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>  <!-- coluna da linha-->
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th scope="row">Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>
